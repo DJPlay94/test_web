@@ -7,7 +7,7 @@ body{
     font-size: 16px;
 }
 
-.container{
+.window_size{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -61,7 +61,7 @@ li{
     background-repeat: no-repeat;
 }
 
-.bannerInner{
+.banner_first{
     padding-top: 25vh;
 }
 
@@ -78,7 +78,14 @@ h1{
     font-size: 144px;
 }
 
-.buyH1{
+.checkout_form_window__buy_h1{
+    margin-top: 20vh;
+    margin-left: -1px;
+    font-size: 36px;
+    color: #ffbf69;
+}
+
+.checkout_form__buy{
     margin-top: 20vh;
     margin-left: -1px;
     font-size: 36px;
@@ -91,7 +98,7 @@ input{
     font-size: 16px;
 }
 
-.line{
+.checkout_form_window__line{
     width: 100%;
     height: 4px;
     background-color: #ffbf69;
@@ -103,24 +110,11 @@ input{
     color:red;
 }
 
-.info{
+.checkout_form_window__line_info{
     color:rgb(129, 129, 129);
 }
 
-.formInputs{
-    margin-bottom: 50px;
-}
-
-.text{
-    margin: 0;
-    color: white;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-}
-
-.btn{
+.checkout_form_window__line_buy{
     margin-top: 12vh;
     display: flex;
     justify-content: center;
@@ -136,7 +130,36 @@ input{
     color: #000000;
 }
 
-.popitInner{
+.formInputs{
+    margin-bottom: 50px;
+}
+
+.banner_first__text{
+    margin: 0;
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.banner_first_buy{
+    margin-top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 252px;
+    height: 66px;
+    background-color: #CBF3F0;
+
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+
+    color: #000000;
+}
+
+.popit_banner{
     margin-top: 15vh;
     margin-bottom: 10vh;
     display: flex;
@@ -145,13 +168,13 @@ input{
     text-align: center;
 }
 
-.game{
+.popit_banner__info{
     width: 70%;
     line-height: 1.5em;
     font-weight: 400;
 }
 
-.grid-wrapper{
+.buy_wrapper{
     display: flex;
     flex-direction: column;
     margin-bottom: 15vh;
@@ -161,24 +184,24 @@ input{
     padding-bottom: 15vh;
 }
 
-.grid{
+.buy_grid{
     display: flex;
     justify-content: space-evenly;
     margin-top: 6vh;
 }
 
-.grid-item{
+.buy_grid__item{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.product{
+.buy_grid__item_product{
     height: 150px;
     width: 150px;
 }
 
-.buy{
+.buy_grid__item_buy{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,18 +223,18 @@ input{
     padding-bottom: 15vh;
 }
 
-.rules-inner{
+.rules_inner{
     display: block;
     margin-right: 50px;
     min-width: 50%;
 }
 
-.rules-text{
+.rules_text{
     font-weight: 400;
     margin-top: 4vh;
 }
 
-.photo{
+.rules_photo{
     height: 350px;
 }
 
@@ -227,7 +250,14 @@ input{
     margin-bottom: 0;
 }
 
-.saleH1{
+.offer_inner__grid-wrapper_sale{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-size: 72px;
+    color: #000;
+}
+
+.checkout_form__sale_h1{
     margin-top: 10vh;
     margin-bottom: 10vh;
     font-size: 72px;
@@ -238,7 +268,7 @@ input{
     position: relative;
 }
 
-.offerImg{
+.offer_inner__grid-wrapper_item_img{
     position: absolute;
     z-index: 1000;
     top: -15px;
@@ -246,30 +276,90 @@ input{
     height: 60px;
 }
 
-.sale{
+.offer_inner__grid-wrapper_item_sale{
     height: 250px;
+}
+
+.offer_inner__grid-wrapper_item_buy {
+margin-top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 252px;
+    height: 66px;
+    background-color: #CBF3F0;
+
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+
+    color: #000000;
 }
 
 footer{
     background-color: rgb(51, 51, 51);
 }
 
-.footer-inner{
+.footer_inner{
     display: flex;
     justify-content: space-between;
     padding-top: 6vh;
     padding-bottom: 6vh;
 }
 
-.logoP{
+.footer_inner__logo{
     margin: 0;
     color: white;
 }
 
-.aFooter{
+.footer_inner__a{
     font-weight: 600;
     font-size: 16px;
     text-decoration: none;
     font-weight: 400;
     color: #fff;
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    h1{
+        margin: 0;
+        font-size: 30px;
+    }
+    .photo{
+        height: 350px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h1{
+        margin: 0;
+        font-size: 20px;
+    }
+    .photo{
+        height: 150px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    h1{
+        margin: 0;
+        font-size: 20px;
+    }
+    .photo{
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1{
+        margin: 0;
+        font-size: 20px;
+    }
+    .photo{
+        height: 150px;
+    }
+}
+
+    
